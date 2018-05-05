@@ -56,7 +56,7 @@ function post(name, avatar, message) {
             headers: {
                 "Content-Type": "application/json"
             },
-            form: {
+            body: {
                 "username": name,
                 "avatar_url": avatar,
                 "content": message
