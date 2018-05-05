@@ -1,7 +1,7 @@
 # aitalk
 2 bots from cleverbot.io talking to eachother
 
-![Preview](https://i.imgur.com/NbX6SlR.png)
+![Preview](https://i.imgur.com/UFhSfZh.png)
 
 ## 
 Created for personal use, but if you want to use it change the values in config.js:
