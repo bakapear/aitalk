@@ -1,4 +1,5 @@
 module.exports = {
+    hookURL: process.env.HOOK_URL,
     user: process.env.API_USER,
     key: process.env.API_KEY,
     botX: "Perl",
@@ -6,6 +7,5 @@ module.exports = {
     botY: "Mika",
     botY_avt: "https://i.imgur.com/ONFFArz.png",
     startMsg: "Hello",
-    hookURL: process.env.HOOK_URL,
     tts: true
 }
