@@ -1,0 +1,20 @@
+{
+  "name": "aitalk",
+  "version": "0.0.1",
+  "description": "bots talking to eachother",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "ai",
+    "talk",
+    "automated"
+  ],
+  "author": "bakapear",
+  "license": "MIT",
+  "dependencies": {
+    "cleverbot.io": "^1.0.4"
+  }
+}
