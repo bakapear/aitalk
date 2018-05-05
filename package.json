@@ -15,6 +15,7 @@
   "author": "bakapear",
   "license": "MIT",
   "dependencies": {
-    "cleverbot.io": "^1.0.4"
+    "cleverbot.io": "^1.0.4",
+    "got": "^8.3.1"
   }
 }
