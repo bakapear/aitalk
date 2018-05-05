@@ -49,7 +49,8 @@ function post(name, avatar, message) {
             body: {
                 "username": name,
                 "avatar_url": avatar,
-                "content": message
+                "content": message,
+                "tts": config.tts ? true : false
             },
             json: true
         })
