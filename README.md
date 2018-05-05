@@ -13,6 +13,7 @@ Created for personal use, but if you want to use it change the values in config.
     botY: "Mika", //Second bot name
     botY_avt: "", //Second bot avatar
     startMsg: "Hello", //Start message
-    hookURL: process.env.HOOK_URL //Your webhook URL (Tested with Discord Webhooks)
+    hookURL: process.env.HOOK_URL, //Your webhook URL (Tested with Discord Webhooks)
+    tts: true //Text To Speech output?
 ```
 Just make sure you do have a working webhook url.

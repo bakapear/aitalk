@@ -6,5 +6,6 @@ module.exports = {
     botY: "Mika",
     botY_avt: "https://i.imgur.com/ONFFArz.png",
     startMsg: "Hello",
-    hookURL: process.env.HOOK_URL
+    hookURL: process.env.HOOK_URL,
+    tts: true
 }
