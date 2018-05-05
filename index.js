@@ -23,7 +23,7 @@ botY.setNick(config.botY)
 //Init both bots and send startMsg
 botX.create((errX, sessionX) => {
     botY.create((errY, sessionY) => {
-        post(botY, botY_avt, config.startMsg);
+        post(config.botY, config.botY_avt, config.startMsg);
         askX(config.startMsg);
         console.log(config.botY + ":", config.startMsg)
     })
@@ -32,7 +32,7 @@ botX.create((errX, sessionX) => {
 function askX(message) {
     try {
         botX.ask(message, (err, response) => {
-            post(botX, botX_avt, response);
+            post(config.botX, config.botX_avt, response);
             askY(response)
             console.log(config.botX + ":", response)
         })
@@ -42,7 +42,7 @@ function askX(message) {
 function askY(message) {
     try {
         botY.ask(message, (err, response) => {
-            post(botY, botY_avt, response);
+            post(config.botY, config.botY_avt, response);
             askX(response)
             console.log(config.botY + ":", response)
         })
