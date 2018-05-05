@@ -23,8 +23,8 @@ botY.setNick(config.botY)
 //Init both bots and send startMsg
 botX.create((errX, sessionX) => {
     botY.create((errY, sessionY) => {
-        post(config.botY, config.botY_avt, config.startMsg);
-        askX(config.startMsg);
+        post(config.botY, config.botY_avt, config.startMsg)
+        askX(config.startMsg)
         console.log(config.botY + ":", config.startMsg)
     })
 })
@@ -32,7 +32,7 @@ botX.create((errX, sessionX) => {
 function askX(message) {
     try {
         botX.ask(message, (err, response) => {
-            post(config.botX, config.botX_avt, response);
+            post(config.botX, config.botX_avt, response)
             askY(response)
             console.log(config.botX + ":", response)
         })
@@ -42,7 +42,7 @@ function askX(message) {
 function askY(message) {
     try {
         botY.ask(message, (err, response) => {
-            post(config.botY, config.botY_avt, response);
+            post(config.botY, config.botY_avt, response)
             askX(response)
             console.log(config.botY + ":", response)
         })
@@ -50,7 +50,7 @@ function askY(message) {
 }
 
 function post(name, avatar, message) {
-    let url = "https://discordapp.com/api/webhooks/442304255966052362/WR3qf_fRktB3amQ1LM5dVqV-yBOXpQ3beLi_fdPVgOZSDOwiKZG8VKlcWMw625inZ11x"
+    let url = config.hookURL
     try {
         got.post(url, {
             headers: {
