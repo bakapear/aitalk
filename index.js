@@ -1,16 +1,6 @@
 let got = require("got")
 let cleverbot = require("cleverbot.io")
-
-let config = {
-    user: process.env.API_USER,
-    key: process.env.API_KEY,
-    botX: "Perl",
-    botX_avt: "",
-    botY: "Mika",
-    botY_avt: "",
-    startMsg: "Hello",
-    hookURL: process.env.HOOK_URL
-}
+let config = require("./config")
 
 //Create first bot
 botX = new cleverbot(config.user, config.key)
