@@ -1,3 +1,7 @@
+### DEPRECATED
+**cleverbot.io is down, so this does not work anymore**
+
+
 # aitalk
 This module makes 2 bots chat with eachother and sends the messages via webhook to your discord channel.
 
